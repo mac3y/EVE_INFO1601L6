@@ -7,18 +7,23 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>My Page</h1>
+    <!--Exercise
+    Write markup and code in index.html to do the following;
 
-    <input type="button" id="alertBtn" value="alert" onclick="alertFun()"/>
-    <input type="button" value="confirm" onclick="confirmFun()"/>
-    <input type="button" value="prompt" onclick="promptFun()"/>
+    Render an image from https://www.placecage.com/ using the img tag.
+    Create a function called ‘loaded()' which logs to the console ‘img loaded'.
+    Attach the loaded() function to the "load" event of the image.-->
 
-    <span id="result"></span>
+    <img id="myId" src="https://placecage.lucidinternets.com/200/300" alt="";>
 
     <script>
+      const img = document.querySelector('#myId');
+      img.addEventListener('load',loaded);
 
-
+      function loaded(){
+        console.log('img loaded');
+      }
     </script>
-    <script src="script.js"></script>
+
   </body>
 </html>
